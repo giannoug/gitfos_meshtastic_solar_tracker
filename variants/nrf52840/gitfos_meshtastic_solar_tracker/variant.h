@@ -179,14 +179,6 @@ SO GPIO 39/TXEN MAY NOT BE DEFINED FOR SUCCESSFUL OPERATION OF THE SX1262 - TG
 
 */
 
-// configure the SET pin on the RAK12039 sensor board to disable the sensor while not reading
-// air quality telemetry.  PIN_NFC2 doesn't seem to be used anywhere else in the codebase, but if
-// you're having problems with your node behaving weirdly when a RAK12039 board isn't connected,
-// try disabling this.
-// #define PMSA003I_ENABLE_PIN PIN_NFC2
-
-// #define DETECTION_SENSOR_EN 4
-
 #define USE_SX1262
 #define SX126X_CS (42)
 #define SX126X_DIO1 (47)
@@ -205,13 +197,6 @@ SO GPIO 39/TXEN MAY NOT BE DEFINED FOR SUCCESSFUL OPERATION OF THE SX1262 - TG
 // enables 3.3V periphery like IO Module
 #define PIN_3V3_EN (34)
 
-// RAK12002 RTC Module
-// #define RV3028_RTC (uint8_t)0b1010010
-
-// RAK18001 Buzzer in Slot C
-// #define PIN_BUZZER 21 // IO3 is PWM2
-// NEW: set this via protobuf instead!
-
 // Battery
 // The battery sense is hooked to pin A0 (5)
 #define BATTERY_PIN PIN_A0
@@ -222,17 +207,6 @@ SO GPIO 39/TXEN MAY NOT BE DEFINED FOR SUCCESSFUL OPERATION OF THE SX1262 - TG
 #define AREF_VOLTAGE 3.0
 #define VBAT_AR_INTERNAL AR_INTERNAL_3_0
 #define ADC_MULTIPLIER 1.73
-
-// #define HAS_RTC 1
-
-// #define HAS_ETHERNET 1
-
-// #define RAK_4631 1
-
-// #define PIN_ETHERNET_RESET 21
-// #define PIN_ETHERNET_SS 26
-// #define ETH_SPI_PORT SPI1
-// #define AQ_SET_PIN 10
 
 #ifdef __cplusplus
 }
