@@ -121,26 +121,6 @@ static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK = PIN_SPI_SCK;
 
 /*
- * eink display pins
- */
-
-// #define PIN_EINK_CS (0 + 26)
-// #define PIN_EINK_BUSY (0 + 4)
-// #define PIN_EINK_DC (0 + 17)
-// #define PIN_EINK_RES (-1)
-// #define PIN_EINK_SCLK (0 + 3)
-// #define PIN_EINK_MOSI (0 + 30) // also called SDI
-
-// #define USE_EINK
-
-// Display - OLED connected via I2C
-#define HAS_SCREEN 1
-#define USE_SSD1306
-
-// RAKRGB
-// #define HAS_NCP5623
-
-/*
  * Wire Interfaces
  */
 #define WIRE_INTERFACES_COUNT 1
@@ -250,7 +230,7 @@ SO GPIO 39/TXEN MAY NOT BE DEFINED FOR SUCCESSFUL OPERATION OF THE SX1262 - TG
 // #define RAK_4631 1
 
 // #define PIN_ETHERNET_RESET 21
-// #define PIN_ETHERNET_SS PIN_EINK_CS
+// #define PIN_ETHERNET_SS 26
 // #define ETH_SPI_PORT SPI1
 // #define AQ_SET_PIN 10
 
