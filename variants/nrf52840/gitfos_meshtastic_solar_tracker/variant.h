@@ -19,9 +19,6 @@
 #ifndef _VARIANT_GITFOS_MESHTASTIC_SOLAR_TRACKER_
 #define _VARIANT_GITFOS_MESHTASTIC_SOLAR_TRACKER_
 
-// led pin 2 (blue), see https://github.com/meshtastic/firmware/blob/master/src/mesh/NodeDB.cpp#L723
-#define RAK4630
-
 /** Master clock frequency */
 #define VARIANT_MCK (64000000ul)
 
